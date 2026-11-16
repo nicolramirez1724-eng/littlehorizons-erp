@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+         xmlns:fe="http://www.dian.gov.co/contratos/facturaelectronica/v1">
+    <cbc:UBLVersionID>UBL 2.1</cbc:UBLVersionID>
+    <cbc:CustomizationID>10</cbc:CustomizationID>
+    <cbc:ProfileID>DIAN 2.1: Factura Electronica de Venta</cbc:ProfileID>
+    <cbc:ID>FE-000101</cbc:ID>
+    <cbc:UUID schemeName="CUFE-SHA384">946f391ac8c45adc2ba84ec3e36d759c055d3f685cef2a6a6505304464509013cc9008f331924a5ec4905eebbd2b8c1b</cbc:UUID>
+    <cbc:IssueDate>2026-11-16</cbc:IssueDate>
+    <cbc:IssueTime>12:00:00-05:00</cbc:IssueTime>
+    <cbc:InvoiceTypeCode>01</cbc:InvoiceTypeCode>
+    <cbc:DocumentCurrencyCode>COP</cbc:DocumentCurrencyCode>
+    <cac:AccountingSupplierParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID schemeAgencyID="195" schemeID="4" schemeName="31">901458732</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Colegio Internacional Little Horizons S.A.S.</cbc:Name>
+            </cac:PartyName>
+            <cac:PhysicalLocation>
+                <cac:Address>
+                    <cbc:CityName>Bogota D.C.</cbc:CityName>
+                    <cbc:CountrySubentity>Cundinamarca</cbc:CountrySubentity>
+                    <cac:AddressLine>
+                        <cbc:Line>Calle 127 # 15-45</cbc:Line>
+                    </cac:AddressLine>
+                </cac:Address>
+            </cac:PhysicalLocation>
+        </cac:Party>
+    </cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID schemeAgencyID="195" schemeName="13">79845123</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Carlos Alberto Gomez Perez</cbc:Name>
+            </cac:PartyName>
+            <cac:Contact>
+                <cbc:Telephone>3102345678</cbc:Telephone>
+            </cac:Contact>
+        </cac:Party>
+    </cac:AccountingCustomerParty>
+    <cac:PaymentMeans>
+        <cbc:PaymentMeansCode>10</cbc:PaymentMeansCode>
+        <cbc:PaymentID>REC-2026-0001</cbc:PaymentID>
+    </cac:PaymentMeans>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="COP">0.00</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="COP">380000.00</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="COP">0.00</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:Percent>0.00</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>01</cbc:ID>
+                    <cbc:Name>IVA - Excluido Art. 476 Num 6 E.T.</cbc:Name>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="COP">380000.00</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="COP">380000.00</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="COP">380000.00</cbc:TaxInclusiveAmount>
+        <cbc:PayableAmount currencyID="COP">380000.00</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:InvoiceLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="EA">1.00</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="COP">380000.00</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Description>Pension Mensual Noviembre - Estudiante: Mateo David Gomez Rodriguez</cbc:Description>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="COP">380000.00</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+</Invoice>
