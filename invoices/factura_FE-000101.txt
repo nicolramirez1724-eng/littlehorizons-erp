@@ -1,0 +1,44 @@
+================================================================================
+COLEGIO INTERNACIONAL LITTLE HORIZONS S.A.S. - FACTURA ELECTRONICA DE VENTA
+================================================================================
+NUMERO_FACTURA: FE-000101
+FECHA_EMISION: 2026-11-16
+HORA_EMISION: 12:00:00
+CUFE: 946f391ac8c45adc2ba84ec3e36d759c055d3f685cef2a6a6505304464509013cc9008f331924a5ec4905eebbd2b8c1b
+RESOLUCION_DIAN: N° 18764012345678 (Vigencia 2026-01-15 a 2027-12-31 | FE-000001 a FE-999999)
+REGIMEN_FISCAL: Responsable de IVA - Persona Juridica
+
+[EMISOR]
+RAZON_SOCIAL: Colegio Internacional Little Horizons S.A.S.
+NIT: 901.458.732-4
+DIRECCION: Calle 127 # 15-45, Bogota D.C., Colombia
+TELEFONO: +57 (601) 745-8900
+CORREO_ELECTRONICO: facturacion@littlehorizons.edu.co
+
+[ADQUIRENTE / RESPONSABLE FINANCIERO]
+NOMBRE_COMPLETO: Carlos Alberto Gomez Perez
+NUMERO_DOCUMENTO: 79845123
+DIRECCION: Calle 127 # 15-45, Bogota D.C.
+TELEFONO: 3102345678
+ESTUDIANTE_BENEFICIARIO: Mateo David Gomez Rodriguez
+DOCUMENTO_ESTUDIANTE: 1025894123
+
+[DETALLE_ITEMS]
+ITEM | CODIGO | DESCRIPCION | CANTIDAD | VALOR_UNITARIO_COP | IVA_PCT | SUBTOTAL_COP
+1 | PENSION | Pension Mensual Noviembre | 1 | 380000.00 | 0.00% (Art 476 Num 6 ET Excluido) | 380000.00
+
+[RESUMEN_TRIBUTARIO_COP]
+SUBTOTAL: 380000.00
+DESCUENTOS: 0.00
+IVA_0_PCT_EXCLUIDO: 0.00
+TOTAL_A_PAGAR: 380000.00
+METODO_PAGO: Transferencia
+NUMERO_RECIBO_SOPORTE: REC-2026-0001
+ANIO_ACADEMICO: 2026
+PERIODO_ACADEMICO: I
+
+[CUMPLIMIENTO_DIAN]
+TIPO_DOCUMENTO: Factura Electronica de Venta (UBL 2.1)
+QR_VALIDACION_DIAN: https://catalogo-vpfe.dian.gov.co/document/searchqr?documentkey=946f391ac8c45adc2ba84ec3e36d759c055d3f685cef2a6a6505304464509013cc9008f331924a5ec4905eebbd2b8c1b
+NOTAS_LEGALES: Documento soporte emitido bajo las disposiciones del Decreto 358 de 2020 y Resolucion 000042 de 2020.
+================================================================================
