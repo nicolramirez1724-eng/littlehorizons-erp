@@ -1,0 +1,12 @@
+# Build artifacts
+out/
+target/
+*.class
+
+# Logs
+error_log.txt
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
