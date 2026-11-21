@@ -121,6 +121,23 @@ public class TerminalReader {
     }
 
     /**
+     * Reads a raw trimmed line without validation.
+     */
+    public static String readLine(String prompt) {
+        System.out.print(prompt + " ");
+        String line = SCANNER.nextLine();
+        return line == null ? "" : line.trim();
+    }
+
+    /**
+     * Shows a custom message and pauses until user presses Enter.
+     */
+    public static void pause(String message) {
+        System.out.println(message);
+        SCANNER.nextLine();
+    }
+
+    /**
      * Pauses until user presses Enter.
      */
     public static void pause() {

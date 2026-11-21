@@ -13,6 +13,7 @@ public class MainMenuView {
     private final FinanceView financeView;
     private final ResourceView resourceView;
     private final ReportView reportView;
+    private final CertificateView certificateView;
 
     public MainMenuView() {
         this.studentView = new StudentView(new StudentController());
@@ -22,6 +23,7 @@ public class MainMenuView {
         this.financeView = new FinanceView(new FinanceController());
         this.resourceView = new ResourceView(new ResourceController());
         this.reportView = new ReportView();
+        this.certificateView = new CertificateView(new CertificateController());
     }
 
     public void start() {
@@ -52,10 +54,11 @@ public class MainMenuView {
             System.out.println("  5. Gestión Financiera (Pagos y Facturación Electrónica DIAN)");
             System.out.println("  6. Gestión de Recursos (Biblioteca y Laboratorios)");
             System.out.println("  7. Reportes, Estadísticas y Auditoría");
-            System.out.println("  8. Salir del Sistema");
+            System.out.println("  8. TEST - Generar Certificado de Notas");
+            System.out.println("  9. Salir del Sistema");
             System.out.println("────────────────────────────────────────────────────────────────");
 
-            int option = TerminalReader.readInt("Seleccione una opción", 1, 8);
+            int option = TerminalReader.readInt("Seleccione una opción", 1, 9);
             switch (option) {
                 case 1:
                     studentView.displayMenu();
@@ -79,6 +82,9 @@ public class MainMenuView {
                     reportView.displayMenu();
                     break;
                 case 8:
+                    certificateView.generateCertificate();
+                    break;
+                case 9:
                     exit = true;
                     System.out.println("\nGracias por utilizar el ERP Colegio Little Horizons. ¡Hasta pronto!");
                     break;

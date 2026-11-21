@@ -1,0 +1,128 @@
+[2026-11-21 00:43:34] [INFO] Iniciando ERP Colegio Little Horizons...
+================================================================================
+[2026-11-21 00:43:34] [ERROR] Database connection test failed
+Exception: java.sql.SQLException - Access denied for user 'root'@'localhost'
+java.sql.SQLException: Access denied for user 'root'@'localhost'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at com.littlehorizons.erp.util.DatabaseConnection.getConnection(DatabaseConnection.java:71)
+	at com.littlehorizons.erp.util.DatabaseConnection.testConnection(DatabaseConnection.java:80)
+	at com.littlehorizons.erp.view.MainMenuView.start(MainMenuView.java:34)
+	at com.littlehorizons.erp.Main.main(Main.java:15)
+================================================================================
+[2026-11-21 00:47:00] [INFO] Iniciando ERP Colegio Little Horizons...
+================================================================================
+[2026-11-21 00:47:00] [ERROR] Database connection test failed
+Exception: java.sql.SQLException - Access denied for user 'root'@'localhost'
+java.sql.SQLException: Access denied for user 'root'@'localhost'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at com.littlehorizons.erp.util.DatabaseConnection.getConnection(DatabaseConnection.java:71)
+	at com.littlehorizons.erp.util.DatabaseConnection.testConnection(DatabaseConnection.java:80)
+	at com.littlehorizons.erp.view.MainMenuView.start(MainMenuView.java:36)
+	at com.littlehorizons.erp.Main.main(Main.java:15)
+================================================================================
+================================================================================
+[2026-11-21 00:48:51] [ERROR] Failed to find student by document: 10123528848
+Exception: java.sql.SQLException - Access denied for user 'root'@'localhost'
+java.sql.SQLException: Access denied for user 'root'@'localhost'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at com.littlehorizons.erp.util.DatabaseConnection.getConnection(DatabaseConnection.java:71)
+	at com.littlehorizons.erp.dao.StudentDAO.findByDocument(StudentDAO.java:75)
+	at com.littlehorizons.erp.controller.StudentController.getStudentByDocument(StudentController.java:27)
+	at com.littlehorizons.erp.view.StudentView.registerStudent(StudentView.java:93)
+	at com.littlehorizons.erp.view.StudentView.displayMenu(StudentView.java:41)
+	at com.littlehorizons.erp.view.MainMenuView.start(MainMenuView.java:64)
+	at com.littlehorizons.erp.Main.main(Main.java:15)
+================================================================================
+================================================================================
+[2026-11-21 00:50:02] [ERROR] Failed to save student: 10123528848
+Exception: java.sql.SQLException - Access denied for user 'root'@'localhost'
+java.sql.SQLException: Access denied for user 'root'@'localhost'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at com.littlehorizons.erp.util.DatabaseConnection.getConnection(DatabaseConnection.java:71)
+	at com.littlehorizons.erp.dao.StudentDAO.save(StudentDAO.java:22)
+	at com.littlehorizons.erp.controller.StudentController.registerStudent(StudentController.java:35)
+	at com.littlehorizons.erp.view.StudentView.registerStudent(StudentView.java:158)
+	at com.littlehorizons.erp.view.StudentView.displayMenu(StudentView.java:41)
+	at com.littlehorizons.erp.view.MainMenuView.start(MainMenuView.java:64)
+	at com.littlehorizons.erp.Main.main(Main.java:15)
+================================================================================
+[2026-11-21 00:59:20] [INFO] Iniciando ERP Colegio Little Horizons...
+================================================================================
+[2026-11-21 00:59:28] [ERROR] Failed to fetch all students
+Exception: java.sql.SQLSyntaxErrorException - Table 'erp_little_horizons.estudiantes' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'erp_little_horizons.estudiantes' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:968)
+	at com.littlehorizons.erp.dao.StudentDAO.findAll(StudentDAO.java:94)
+	at com.littlehorizons.erp.controller.StudentController.listAllStudents(StudentController.java:23)
+	at com.littlehorizons.erp.view.StudentView.listStudents(StudentView.java:61)
+	at com.littlehorizons.erp.view.StudentView.displayMenu(StudentView.java:38)
+	at com.littlehorizons.erp.view.MainMenuView.start(MainMenuView.java:64)
+	at com.littlehorizons.erp.Main.main(Main.java:15)
+================================================================================
+================================================================================
+[2026-11-21 00:59:51] [ERROR] Failed to find student by document: 111111111
+Exception: java.sql.SQLSyntaxErrorException - Table 'erp_little_horizons.estudiantes' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'erp_little_horizons.estudiantes' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:968)
+	at com.littlehorizons.erp.dao.StudentDAO.findByDocument(StudentDAO.java:78)
+	at com.littlehorizons.erp.controller.StudentController.getStudentByDocument(StudentController.java:27)
+	at com.littlehorizons.erp.view.StudentView.registerStudent(StudentView.java:93)
+	at com.littlehorizons.erp.view.StudentView.displayMenu(StudentView.java:41)
+	at com.littlehorizons.erp.view.MainMenuView.start(MainMenuView.java:64)
+	at com.littlehorizons.erp.Main.main(Main.java:15)
+================================================================================
+================================================================================
+[2026-11-21 01:01:17] [ERROR] Failed to save student: 111111111
+Exception: java.sql.SQLSyntaxErrorException - Table 'erp_little_horizons.estudiantes' doesn't exist
+java.sql.SQLSyntaxErrorException: Table 'erp_little_horizons.estudiantes' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at com.littlehorizons.erp.dao.StudentDAO.save(StudentDAO.java:42)
+	at com.littlehorizons.erp.controller.StudentController.registerStudent(StudentController.java:35)
+	at com.littlehorizons.erp.view.StudentView.registerStudent(StudentView.java:158)
+	at com.littlehorizons.erp.view.StudentView.displayMenu(StudentView.java:41)
+	at com.littlehorizons.erp.view.MainMenuView.start(MainMenuView.java:64)
+	at com.littlehorizons.erp.Main.main(Main.java:15)
+================================================================================
+[2026-11-21 01:27:13] [INFO] Iniciando ERP Colegio Little Horizons...
+[2026-11-21 01:31:36] [INFO] Iniciando ERP Colegio Little Horizons...
+[2026-11-21 02:07:12] [INFO] Iniciando ERP Colegio Little Horizons...

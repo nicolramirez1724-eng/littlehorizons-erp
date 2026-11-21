@@ -119,13 +119,16 @@ src/com/littlehorizons/erp/
 │   ├── Student.java, Guardian.java, Teacher.java, Subject.java
 │   ├── AcademicRecord.java, Attendance.java, Club.java, Event.java
 │   ├── Payment.java, PaymentConcept.java, Invoice.java, Resource.java, etc.
+│   ├── CertificateData.java, CertificateSubjectLine.java, CertificateGrade.java
 ├── dao/                               // Acceso a datos con PreparedStatement y try-with-resources
 │   ├── StudentDAO.java, GuardianDAO.java, TeacherDAO.java, SubjectDAO.java
 │   ├── AcademicRecordDAO.java, AttendanceDAO.java, ClubDAO.java, EventDAO.java
-│   ├── PaymentDAO.java, InvoiceDAO.java, ResourceDAO.java
+│   ├── PaymentDAO.java, InvoiceDAO.java, ResourceDAO.java, CertificateDAO.java
 ├── service/                           // Lógica de negocio y marco legal colombiano
 │   ├── AcademicService.java           // Escala cualitativa MEN (Dec. 1290) y cálculos con Streams
 │   ├── AttendanceService.java         // Detección de ausentismo semanal
+│   ├── CertificateService.java        // Certificado de notas 2025: consulta, promedios y escritura del .txt
+│   ├── CertificateFormatter.java      // Formato de texto plano alineado del certificado
 │   ├── ExtracurricularService.java    // Validación de cupo de clubes y competencias
 │   ├── FinanceService.java            // Pagos, cartera deudora y orquestación de facturación
 │   ├── ResourceService.java           // Préstamos, inventario y vencimientos
@@ -138,9 +141,11 @@ src/com/littlehorizons/erp/
 ├── controller/                        // Coordinación entre Vista y Negocio
 │   ├── StudentController.java, AcademicController.java, TeacherController.java
 │   ├── ExtracurricularController.java, FinanceController.java, ResourceController.java
+│   ├── CertificateController.java
 ├── view/                              // Interfaz de usuario por consola con validaciones
 │   ├── MainMenuView.java, StudentView.java, AcademicView.java, TeacherView.java
 │   ├── ExtracurricularView.java, FinanceView.java, ResourceView.java, ReportView.java
+│   ├── CertificateView.java
 └── util/                              // Utilidades transversales y auditoría de entradas
     ├── DatabaseConnection.java        // Singleton de conexión JDBC
     ├── LoggerManager.java             // Registro a error_log.txt
@@ -206,6 +211,12 @@ src/com/littlehorizons/erp/
 * Catálogo de libros, equipos de laboratorio, tecnología y deportes.
 * Ciclo de préstamo y devolución con actualización inmediata del estado (`Disponible` / `Prestado`).
 * Reporte de préstamos vencidos.
+
+### 7. TEST - Generar Certificado de Notas (opción 8 del menú principal)
+* Solicita el ID del estudiante, valida que sea numérico y verifica que exista y tenga notas del año 2025.
+* Relaciona `estudiantes`, `matriculas`, `grados`, `registros_academicos` y `materias`, filtrando por `año_academico = 2025`.
+* Calcula el promedio por materia (solo períodos con nota) y el promedio general del año, con un decimal.
+* Genera `certificado_[id]_2025.txt` en la carpeta raíz del proyecto, con columnas alineadas y `---` en los períodos sin nota.
 
 ---
 

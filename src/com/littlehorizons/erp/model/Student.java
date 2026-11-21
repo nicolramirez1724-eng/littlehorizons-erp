@@ -1,6 +1,8 @@
 package com.littlehorizons.erp.model;
 
 import java.time.LocalDate;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Student {
     private int id;
@@ -47,12 +49,10 @@ public class Student {
     }
 
     public String getFullName() {
-        StringBuilder sb = new StringBuilder();
-        if (firstName != null) sb.append(firstName);
-        if (secondName != null && !secondName.isEmpty()) sb.append(" ").append(secondName);
-        if (firstLastName != null) sb.append(" ").append(firstLastName);
-        if (secondLastName != null && !secondLastName.isEmpty()) sb.append(" ").append(secondLastName);
-        return sb.toString();
+        return Stream.of(firstName, secondName, firstLastName, secondLastName)
+                .filter(part -> part != null && !part.isBlank())
+                .map(String::trim)
+                .collect(Collectors.joining(" "));
     }
 
     public int getId() { return id; }
